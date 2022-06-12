@@ -1,0 +1,124 @@
+{
+  "tests": [
+    {
+      "name": "Pregunta 01",
+      "setup": "docker pull jdvelasq/hive:classroom",
+      "run": "python3 pregunta_01/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 02",
+      "setup": "docker pull jdvelasq/hive:classroom",
+      "run": "python3 pregunta_02/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 03",
+      "setup": "docker pull jdvelasq/hive:classroom",
+      "run": "python3 pregunta_03/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 04",
+      "setup": "docker pull jdvelasq/hive:classroom",
+      "run": "python3 pregunta_04/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 05",
+      "setup": "docker pull jdvelasq/hive:classroom",
+      "run": "python3 pregunta_05/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 06",
+      "setup": "docker pull jdvelasq/hive:classroom",
+      "run": "python3 pregunta_06/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 07",
+      "setup": "docker pull jdvelasq/hive:classroom",
+      "run": "python3 pregunta_07/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 08",
+      "setup": "docker pull jdvelasq/hive:classroom",
+      "run": "python3 pregunta_08/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 09",
+      "setup": "docker pull jdvelasq/hive:classroom",
+      "run": "python3 pregunta_09/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 10",
+      "setup": "docker pull jdvelasq/hive:classroom",
+      "run": "python3 pregunta_10/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 11",
+      "setup": "docker pull jdvelasq/hive:classroom",
+      "run": "python3 pregunta_11/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Pregunta 12",
+      "setup": "docker pull jdvelasq/hive:classroom",
+      "run": "python3 pregunta_12/test.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
