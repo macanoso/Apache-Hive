@@ -51,9 +51,12 @@ DROP TABLE IF EXISTS counter;
 CREATE TABLE counter 
 AS 
         SELECT 
-               UPPER(CONCAT_WS(':',c5))
+               c2 as word, 
+               concat_ws(':',collect_list(c1)) as numbers
         FROM 
-                tbl0;
+                tbl0
+        GROUP BY   
+            word;
 
 INSERT OVERWRITE LOCAL DIRECTORY './output'
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
