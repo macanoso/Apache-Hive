@@ -29,7 +29,7 @@ LOAD DATA LOCAL INPATH "data.tsv" OVERWRITE INTO TABLE data;
 CREATE TABLE counter 
 AS 
         SELECT 
-                letter, fecha, number 
+                * 
         FROM 
                 data 
         ORDER BY 
