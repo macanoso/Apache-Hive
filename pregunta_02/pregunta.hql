@@ -31,7 +31,7 @@ AS
         FROM 
                 data 
         ORDER BY 
-                letter asc, number asc;
+                letter, number, fecha;
 
 INSERT OVERWRITE LOCAL DIRECTORY './output'
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
