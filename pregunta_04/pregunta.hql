@@ -44,3 +44,21 @@ LOAD DATA LOCAL INPATH 'data1.csv' INTO TABLE tbl1;
 /*
     >>> Escriba su respuesta a partir de este punto <<<
 */
+
+CREATE TABLE unique_words 
+AS 
+        SELECT 
+                distinct(word)
+        FROM 
+                tbl0
+        LATERAL VIEW
+            explode(c5) tbl0 as word;
+
+INSERT OVERWRITE LOCAL DIRECTORY './output'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+SELECT 
+        *
+FROM 
+        unique_words
+ORDER BY
+    word;
