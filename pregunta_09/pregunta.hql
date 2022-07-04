@@ -45,4 +45,25 @@ LOAD DATA LOCAL INPATH 'data1.csv' INTO TABLE tbl1;
 /*
     >>> Escriba su respuesta a partir de este punto <<<
 */
+DROP TABLE IF EXISTS counter;
+CREATE TABLE counter 
+AS 
+        SELECT 
+               c1,
+               key,
+               val
+        FROM  
+                tbl1
+        LATERAL VIEW OUTER
+            explode(c4) tbl1 as key,val;
 
+INSERT OVERWRITE LOCAL DIRECTORY './output'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+SELECT 
+        tbl0.c1,
+        tbl0.c2,
+        counter.val
+FROM 
+    tbl0, counter
+WHERE
+    tbl0.c1=counter.c1 and tbl0.c2=counter.key;
